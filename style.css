@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    color: #FFF2E7;
+    border: 0;
+}
+
+.button-mobile{
+    display: none;
+}
+
+.section-texto-mobile{
+    display: none;
+    transition: all;
+}
+
+br{
+    display: none;
+}
+
+html{
+    max-width: 1920px;
+    max-height: 1100px;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+body header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2vh;
+    padding-bottom: 1.5vh;
+}
+
+.header-texto{
+    display: flex;
+    justify-content: space-around;
+    width: 45vw;
+    font-family: 'Sarala', sans-serif;
+    font-size: 1.2rem;
+}
+
+.header-texto a:hover{
+    font-size: 1.3rem;
+    color:#feafbe;
+    transition:ease-in-out .2s;
+
+}
+
+main .main-section-middle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: #FFF2E7 solid .4px;
+}
+
+main .main-section-middle div{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+main .main-section-middle div h1{
+    font-size: 64px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+}
+
+main .main-section-middle div span{
+    font-family: 'sarala';
+    font-size: 24px;
+    color: #ECD6C4;
+}
+
+.btn-add{
+    color: black;
+    background-color: #ECD6C4;
+    height: 67px;
+    width: 185px;
+    border-radius: 20px;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'sarala';
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.btn-add:hover{
+    background-color:#cc8373;
+    font-size: 25px;
+    transition: ease-in-out .3s;
+}
+
+.main-section-bot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.main-section-bot div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 2vh;   
+}
+
+.main-section-bot h2{
+    font-size: 24px;
+    font-family: "righteous";
+    font-weight: 400;
+    width: 19vw;
+    border-top: .4px solid #FFF2E7;
+    margin: 0 auto;
+    padding-top: 6vh;
+    margin-bottom: 4vh;
+}
+
+.main-section-bot span{
+    font-size: 18px;
+    font-family: 'sarala';
+    font-weight: 400;
+
+}
+
+footer{
+    border-top: .4px solid #FFF2E7;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+    margin-top: 9vh;
+}
+
+footer img{
+   display: block;
+   margin: 0 auto;
+}
+
+@media only screen and (max-width:1024px) {
+
+    body{
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+
+    header .header-texto{
+        width: 55vw;
+    }
+
+
+    .main-section-bot{
+        margin-top: 6vh;
+        margin-bottom: 0vh;
+    }
+
+    .main-section-bot h2{
+        padding-top: 4vh;
+        width: 26vw;
+        margin-bottom: 2vh;
+    }
+
+    footer{
+        margin-top: 5vh;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+    }
+
+}
+
+@media only screen and (max-width:768px){
+    
+    main .main-section-middle{
+        border: none;
+    }
+
+    header{
+        border-bottom: #FFF2E7 solid 0.4px;
+    }
+    
+    body{
+        background-repeat: repeat-y;
+    }
+    
+    br{
+        display: block;
+    }
+    
+    .button-mobile{
+        display: block;
+    }
+    
+    header .ul-desktop{
+        display: none;
+    }
+
+    .section-texto-mobile-ativo{
+        display: block;
+        transition: 1s;
+    }
+
+    .ul-mobile{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        background-color: #ECD6C4;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        box-shadow: inset 0px 0px 3px 0px black;
+    }
+
+    .ul-mobile a{
+        color: #000000b8;
+        font-family:"righteous";
+    }
+
+
+    .button-mobile{
+        height: 33px;
+        width: 38px;
+        background-color: transparent;
+        border: 2px solid #FFF2E7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        border-radius: 5px;
+    }
+
+    .button-mobile span{
+        background-color: #FFF2E7;
+        padding: 1.5px;
+        width: 70%;
+        border-radius: 15px;
+    }
+
+    body header{
+        justify-content: space-evenly;
+    }
+
+    main .main-section-middle{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-width:425px){
+    
+    .br-mobile{
+        display: block !important;
+    }
+
+    br{
+        display: none;
+    }
+
+    header{
+        justify-content: space-around !important;
+    }
+
+    .ul-mobile a{
+        font-size: .8rem
+    }
+
+    .main-section-middle{
+        flex-direction: column-reverse;
+        margin-top: 2vh !important;
+    }
+
+    .main-section-middle div img{
+        width: 50vw;
+    }
+
+    .main-section-middle div{
+        align-items: center;
+        gap: 3vh !important;
+    }
+
+    .main-section-middle div h1{
+        font-size: 3rem !important;
+    }
+
+    .main-section-middle div span{
+        font-size: 1.3rem !important;
+        text-align: center;
+    }
+
+    .main-section-bot div{
+        width: 90vw !important;
+        row-gap: 1.8vh;
+    }
+
+    .main-section-bot h2{
+        font-size: 1.4rem;
+        width: 64vw !important;
+    }
+
+    .main-section-bot div span{
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width:320px){
+    footer img{
+        width: 50vw;
+    }
+
+    .main-section-bot div{
+        width: 90vw !important;
+        row-gap: 3vh;
+    }
+}
