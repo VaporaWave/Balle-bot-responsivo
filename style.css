@@ -23,14 +23,14 @@ br{
 }
 
 html{
-    max-width: 1920px;
+    max-width: auto;
     max-height: 1100px;
     overflow-x: hidden;
     margin: 0 auto;
 }
 
 body{
-    width: 100%;
+    width: auto;
     height: 100%;
     background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
     margin: 0 auto;
@@ -322,5 +322,17 @@ footer img{
     .main-section-bot div{
         width: 90vw !important;
         row-gap: 3vh;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .main-section-middle{
+        flex-direction: column-reverse;
+        margin-top: 2vh !important;
+    }
+
+    .main-section-middle div{
+        align-items: center;
+        gap: 3vh !important;
     }
 }
